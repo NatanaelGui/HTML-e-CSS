@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando houver</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            text-align: center;
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+        }
+        span{
+            display: none;            
+        }
+        div:hover > span{
+            color: brown;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <br>
+    <div>
+        <span>Texto Escondido ...</span>
+    </div>
+</body>
+
+</html>

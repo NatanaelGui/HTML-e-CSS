@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    size: 1.5em;
+    background-color: #BFBFBF;
+    text-align: justify;     
+}
+h1 {
+    color: #10403B;
+}
+h1#principal {
+    text-align: center;
+    background-color: #127369;
+    color: rgb(236, 228, 228);
+    border-radius: 16px;
+}
+.basico {
+    color: #10403B;
+}
+.intermediario {
+    color: #717312;
+}
+.avancado {
+    color: #401010;
+}
+
