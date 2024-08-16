@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            margin-bottom: 30px;
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border: 1px solid black;
+            width: 600px;
+            height: 100px;
+            text-align: center;
+        }
+
+        caption {
+            border: 1px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.js" autocomplete="off">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <P>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required pattern="^[0-9]{4}-[0-9]{4}$">
+            </P>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <P>
+                <input type="submit" value="Eviar">
+            </P>
+        </fieldset>
+    </form>
+    <table>
+        <caption>Tabela</caption>
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Idade</legend>
+        <p>
+            <label for="nasc">Ano de Nascimeto:</label>
+            <input type="number" name="nascmento" id="nasc" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="idade">Idade: </label>
+            <output id="idade">0</output>
+        </p>
+    </fieldset>
+    <p>
+        <input type="reset" value="Limpar">
+    </p>
+    <script>
+        function calcIdade(){
+            const ano = new Date().getFullYear();
+            idade.innerHTML = ano - nasc.value;
+        }
+    </script>
+</body>
+</html>

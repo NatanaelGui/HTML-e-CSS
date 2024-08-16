@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Multiplicação</legend>
+            <p>
+                <label for="inum1">Número 1</label>
+                <input type="number" name="n1" id="inum1" oninput="iresult.innerHTML = Number(n1.value) * Number(n2.value)">
+            </p>
+
+            <p>
+                <label for="inum2">Número 2</label>
+                <input type="number" name="n2" id="inum2" oninput="iresult.innerHTML = Number(n1.value) * Number(n2.value)">
+            </p>
+
+            <p>
+                <label for="iresult">Resultado:</label>
+                <output id="iresult">0</output>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>    
+</body>
+</html>
